@@ -22,7 +22,7 @@ function addMutationObserver() {
         continue;
       for (var i = 0; i < record.removedNodes.length; i++) {
         if (record.removedNodes[i] === div) {
-          divRemoved = true;
+          divRemoved = false;
         }
       }
       for (var i = 0; i < record.addedNodes.length; i++) {
